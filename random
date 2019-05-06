@@ -1,0 +1,16 @@
+<View style={{flexDirection:'row', padding: 13, backgroundColor:'white',
+marginHorizontal: 18, shadowOffset:{width:1.5, height:1.5}, shadowColor:'grey',
+shadowOpacity:0.7, top: 20, position: 'absolute', borderRadius: 7, opacity:0.93
+}}>
+  <TextInput
+    placeholder = "Find places..."
+    placeholderTextColor = "grey"
+    onChangeText={(text) => this.handleChange(text)}
+    returnKeyType = 'search'
+    autoCorrect={false}
+    style={{flex:2, fontWeight:'400', backgroundColor:'white', marginRight:30}}
+    />
+  <TouchableOpacity onPress={() => {this.handleClick();}}>
+    <Icon name = "ios-search" size = {20} style={{marginRight:10}}/>
+  </TouchableOpacity>
+</View>
